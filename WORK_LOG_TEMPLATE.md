@@ -5,6 +5,7 @@ Use this template for `AI_WORK_LOG.md` in your project.
 Purpose: capture why decisions were made. Git tracks what changed; this log tracks the context a future contributor would otherwise lose.
 
 Do not duplicate information already clear from commit history.
+Keep entries concise and decision-focused. Long command transcripts, repeated test failures, and large diffs belong in the terminal or git history unless they explain a decision the next contributor must understand.
 
 ## Entry Template
 
@@ -28,6 +29,13 @@ Do not duplicate information already clear from commit history.
 
 **Notes for next contributor:** <risks, follow-ups, constraints, or "none">
 ```
+
+## Entry Scope
+
+- Write one entry per meaningful task or release batch, not one entry per command.
+- Include failed commands only when the failure changes the decision or leaves a risk.
+- Prefer latest-state summaries over full historical recap.
+- If a project log grows large, keep a short current-state section at the top and archive older detail below it.
 
 ## Example Entry
 
