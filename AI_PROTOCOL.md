@@ -32,7 +32,7 @@ This keeps the human maintainer informed and prevents silent surprises.
 ## After Working
 
 1. Update `AI_WORK_LOG.md` with context, decisions, affected files, verification, and remaining risks.
-2. Bump the version if user-visible behavior changed. See `VERSIONING_RULES.md`.
+2. If the project uses explicit versioning and user-visible behavior changed, bump the version. See `VERSIONING_RULES.md`.
 3. Run the project's verification command and record the result.
 4. Report what changed, why, verification result, and any remaining risks.
 

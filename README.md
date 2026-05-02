@@ -28,15 +28,16 @@ This protocol embeds the minimum useful context into the project itself.
 | `WORK_LOG_TEMPLATE.md` | Template for logging decisions and handoff context |
 | `VERSIONING_RULES.md` | When and how to bump version numbers |
 | `PRODUCT_PRINCIPLES_TEMPLATE.md` | Optional template for product direction |
-| `PROTOCOL_DESIGN_RATIONALE.md` | Why the protocol is written this way |
+| `PROTOCOL_DESIGN_RATIONALE.md` | For human maintainers only. AI sessions do not need to read this |
 
 ## Adopting This Protocol
 
 1. Copy `AI_PROTOCOL.md`, `WORK_LOG_TEMPLATE.md`, and `VERSIONING_RULES.md` into your project root.
 2. Create `AI_WORK_LOG.md` from the work log template. The first entry can be "Protocol adopted".
 3. If the project needs product direction, copy `PRODUCT_PRINCIPLES_TEMPLATE.md` to `PRODUCT_PRINCIPLES.md` and fill it in.
-4. If using Claude Code, Cursor, or a similar tool, put the contents of `AI_PROTOCOL.md` where the tool loads project instructions automatically.
-5. If using a pure API flow, prepend `AI_PROTOCOL.md` to the system prompt or instruct the AI to read it at session start.
+4. If using Claude Code, paste the contents of `AI_PROTOCOL.md` into `CLAUDE.md` in the project root.
+5. If using Cursor or a similar tool, put the contents of `AI_PROTOCOL.md` where the tool loads project instructions automatically.
+6. If using a pure API flow, prepend `AI_PROTOCOL.md` to the system prompt or instruct the AI to read it at session start.
 
 Suggested first commit message:
 
