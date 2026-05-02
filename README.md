@@ -1,86 +1,60 @@
 # AI Collaboration Protocol
 
-This repository defines a reusable working protocol for AI-assisted software development.
-
-It is designed for projects where multiple AI assistants, human maintainers, and devices may touch the same codebase over time.
-
-The goal is simple:
+A lightweight protocol for AI-assisted software development.
+Designed for projects where humans and multiple AI assistants share a codebase over time.
 
 > Good process should preserve quality even when context is incomplete, memory is lost, or a different AI takes over.
 
 ## Why This Exists
 
-AI assistants can be powerful, but they are not always continuous.
-One AI may start a feature, another may fix a bug, and a human maintainer may need to understand what happened later.
+AI assistants do not reliably carry memory across sessions. Without shared conventions, critical decisions stay trapped in chat history and the next contributor, human or AI, starts blind.
 
-Without a protocol, important knowledge stays trapped in chat history.
-With a protocol, the project itself becomes the source of truth.
+This protocol embeds the minimum useful context into the project itself.
 
-This protocol creates a shared culture:
+## Core Principles
 
-- Read before acting.
-- Explain before changing.
-- Log after changing.
-- Verify before finishing.
-- Respect previous work.
-- Keep versioning honest.
+- Read before acting
+- Declare before changing
+- Preserve other people's work
+- Log decisions that git commit messages cannot capture
+- Version numbers reflect user-visible change, not AI session activity
+- Keep the protocol small enough that people actually use it
 
-## Core Files
+## Files
 
-- `AI_HANDOFF_GUIDE.md`
-  - The mandatory guide every AI must read before working.
+| File | Purpose |
+| --- | --- |
+| `AI_PROTOCOL.md` | Main protocol every AI reads before working |
+| `WORK_LOG_TEMPLATE.md` | Template for logging decisions and handoff context |
+| `VERSIONING_RULES.md` | When and how to bump version numbers |
+| `PRODUCT_PRINCIPLES_TEMPLATE.md` | Optional template for product direction |
+| `PROTOCOL_DESIGN_RATIONALE.md` | Why the protocol is written this way |
 
-- `AI_STARTUP_CHECKLIST.md`
-  - The checklist every AI must complete before editing files.
+## Adopting This Protocol
 
-- `AI_FINISH_CHECKLIST.md`
-  - The checklist every AI must complete before final response.
+1. Copy `AI_PROTOCOL.md`, `WORK_LOG_TEMPLATE.md`, and `VERSIONING_RULES.md` into your project root.
+2. Create `AI_WORK_LOG.md` from the work log template. The first entry can be "Protocol adopted".
+3. If the project needs product direction, copy `PRODUCT_PRINCIPLES_TEMPLATE.md` to `PRODUCT_PRINCIPLES.md` and fill it in.
+4. If using Claude Code, Cursor, or a similar tool, put the contents of `AI_PROTOCOL.md` where the tool loads project instructions automatically.
+5. If using a pure API flow, prepend `AI_PROTOCOL.md` to the system prompt or instruct the AI to read it at session start.
 
-- `AI_WORK_LOG_TEMPLATE.md`
-  - A standard log entry format for recording AI work.
-
-- `VERSIONING_RULES.md`
-  - Rules for versionCode, versionName, and release naming.
-
-- `PROJECT_ADOPTION_GUIDE.md`
-  - How to adopt this protocol in a project repository.
-
-## Recommended Project Setup
-
-In each project repository, keep a project-specific handoff file such as:
+Suggested first commit message:
 
 ```text
-AI_HANDOFF_GUIDE.md
-AI_WORK_LOG.md
+docs: add AI collaboration protocol
 ```
 
-At the top of that file, link back to this shared protocol:
+## Tool-Supported vs. Pure API
 
-```text
-This project follows the shared AI Collaboration Protocol:
-https://github.com/<owner>/ai-collaboration-protocol
-```
+| | Claude Code / Cursor | Pure API |
+| --- | --- | --- |
+| How protocol loads | Automatically through project instructions | Instruct AI to read `AI_PROTOCOL.md` |
+| Memory between sessions | Partly handled by the tool | Stored in `AI_WORK_LOG.md` |
+| Work log habit | AI can follow project rules | Remind the AI in your prompt |
 
-## Minimal Rule Set
+## Living Document Rule
 
-Every AI assistant must:
+If a rule prevents real mistakes, keep it.
+If a rule mainly creates ceremony, simplify or remove it.
 
-1. Read the required handoff files before editing.
-2. Run `git status --short --branch`.
-3. Summarize what previous AI contributors did.
-4. State what it plans to touch.
-5. Avoid overwriting user or other AI changes.
-6. Update the work log after feature, fix, or refactor work.
-7. Bump version when app behavior changes.
-8. Run the agreed verification command.
-9. Report changed files, verification result, and risks.
-
-## Philosophy
-
-This protocol is not meant to slow development down.
-It is meant to make good work repeatable.
-
-Good systems reduce dependence on individual memory.
-Good systems make quality easier to maintain.
-Good systems let future maintainers understand not only what changed, but why.
-
+The goal is sustainable quality, not compliance theater.
