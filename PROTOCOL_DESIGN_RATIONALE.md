@@ -174,6 +174,41 @@ The adoption instructions should be concrete where the ecosystem convention is k
 **Decision:** Motion carried.
 README now says Claude Code users should paste the contents of `AI_PROTOCOL.md` into `CLAUDE.md` in the project root.
 
+## Session 3: Context Loading Reform
+
+**Date:** 2026-05-03
+
+### Motion: Reduce execution cost without weakening the safety rules
+
+**Raised by:** instancemax, after gathering feedback from Codex companion sessions
+
+**Community feedback:**
+
+Companion AI sessions reviewing real project workflows agreed that the protocol's safety goals are useful, but that the largest practical cost is repeated full-context loading.
+
+The recurring concerns were:
+
+- Reading many long handoff, work log, roadmap, and checklist files every session consumes time and tokens.
+- A work log can become a running transcript if every command, failed test, and intermediate patch is recorded.
+- Full-history reading is useful for onboarding or high-risk work, but wasteful for small localized tasks.
+- The most important daily safety checks are still lightweight: `git status`, recent work context, relevant product direction, verification, and avoiding other contributors' changes.
+
+**Codex's position:**
+
+Accepted the feedback.
+This is not a request to remove the safety net. It is a request to stop making every session carry the entire net.
+
+The protocol should prefer summary-first context loading:
+
+- Always check the working tree first.
+- Read latest work log entries or a current-state summary before reading history.
+- Read deep history only when the task touches related areas, context is unclear, or the change is high-risk.
+- Keep work log entries decision-focused rather than transcript-like.
+
+**Decision:** Motion carried.
+`AI_PROTOCOL.md` now instructs AI sessions to use summary-first context loading.
+`WORK_LOG_TEMPLATE.md` now discourages command transcripts and recommends concise entries per meaningful task or release batch.
+
 ## How to Use This Document
 
 When proposing a change to the protocol:

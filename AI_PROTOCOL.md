@@ -4,10 +4,13 @@ Read this before making any changes to the project.
 
 ## Before You Start
 
-1. Read `AI_WORK_LOG.md` to understand what previous contributors did and why.
-2. Read `PRODUCT_PRINCIPLES.md` if present to understand what this product is and is not.
-3. Run `git status --short --branch` to identify the current branch and any uncommitted changes.
-4. If another contributor has uncommitted changes, do not overwrite them without asking.
+1. Run `git status --short --branch` to identify the current branch and any uncommitted changes.
+2. Read the latest `AI_WORK_LOG.md` entries or summary first.
+3. Read `PRODUCT_PRINCIPLES.md` if present and relevant to the task.
+4. Read deeper historical logs or full background files only when the task touches related areas, context is unclear, or the change is high-risk.
+5. If another contributor has uncommitted changes, do not overwrite them without asking.
+
+Prefer summary-first context loading. The goal is to understand enough to work safely, not to re-read all project history every session.
 
 ## Before You Edit
 
