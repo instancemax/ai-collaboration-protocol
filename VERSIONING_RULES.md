@@ -1,61 +1,34 @@
 # Versioning Rules
 
-This file defines versioning behavior for AI-assisted projects.
+These rules apply to projects using this protocol.
+Adapt the version file location to the platform.
 
-The exact version file varies by platform:
+## When to Bump Version
 
-- Android: `app/build.gradle.kts` or `build.gradle`
-- Node: `package.json`
-- Python: `pyproject.toml`, `setup.cfg`, or project-specific metadata
-- iOS: `Info.plist` or project build settings
+Bump for:
 
-## Core Rule
+- User-visible features
+- Bug fixes
+- UI or behavior changes
+- Data model or migration changes
+- Permission changes
+- Build fixes that affect release output
 
-Every feature change or bug fix must update the project version.
+Do not bump for:
 
-For Android projects:
+- Documentation only
+- Comments or formatting only
+- Development notes with no effect on app behavior
 
-- Increment `versionCode` by exactly 1.
-- Update `versionName` to a short user-facing release name.
+If unsure, choose the smaller release boundary that a user would understand, then explain the decision in `AI_WORK_LOG.md`.
 
-Example:
+## How to Bump
 
-```kotlin
-versionCode = 5621
-versionName = "QA Toolkit TLS"
-```
+Increment the version by 1, or follow the platform's normal convention.
+Give the release a short, user-facing name that describes the change.
 
-## When To Bump Version
+Good version names:
 
-Bump version for:
-
-- User-visible features.
-- Bug fixes.
-- Build fixes.
-- Release behavior changes.
-- Data model changes.
-- Migration changes.
-- Permission changes.
-- UI behavior changes.
-- Export/report behavior changes.
-
-Do not usually bump version for:
-
-- Pure documentation changes.
-- Comments only.
-- Formatting only.
-- Local development notes that do not affect app behavior.
-
-If unsure, bump the version and explain why in the work log.
-
-## Version Name Guidance
-
-The version name is user-facing.
-It should be short, understandable, and product-oriented.
-
-Good examples:
-
-- `QA Toolkit TLS`
 - `Evidence Export`
 - `OCR Search`
 - `Session Reports`
@@ -63,32 +36,25 @@ Good examples:
 
 Avoid:
 
-- Pure numbers only, unless the project owner requires it.
-- Internal branch names.
-- Long technical descriptions.
-- Jokes or unclear labels.
+- Pure numbers with no label
+- Internal branch names
+- Long technical descriptions
+- Names that describe the AI session instead of the product change
+
+## Platform Reference
+
+| Platform | Version file | Fields |
+| --- | --- | --- |
+| Android | `app/build.gradle` or `build.gradle.kts` | `versionCode`, `versionName` |
+| Node.js | `package.json` | `version` |
+| Python | `pyproject.toml` or `setup.cfg` | `version` |
+| iOS | `Info.plist` or build settings | `CFBundleVersion`, `CFBundleShortVersionString` |
+
+## Batching Rule
+
+- Related changes in one coherent release batch: one version increment
+- Unrelated changes intended for separate releases: separate increments
 
 ## Work Log Requirement
 
-Every version change must be recorded in the work log:
-
-```text
-Previous versionCode:
-New versionCode:
-Previous versionName:
-New versionName:
-Version bump reason:
-```
-
-## Multiple Changes In One Batch
-
-If one AI performs several related changes in a single coherent batch, increment versionCode once.
-
-If changes are unrelated and should be released separately, split them into separate batches and increment versionCode for each batch.
-
-## Documentation-Only Exception
-
-If the change is documentation-only, do not bump version unless the project owner asks.
-
-Still update the work log if the documentation is meaningful to project process or handoff.
-
+Every version bump must have a corresponding entry in `AI_WORK_LOG.md` explaining what changed and why.
