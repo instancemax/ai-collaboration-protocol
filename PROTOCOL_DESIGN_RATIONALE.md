@@ -209,6 +209,42 @@ The protocol should prefer summary-first context loading:
 `AI_PROTOCOL.md` now instructs AI sessions to use summary-first context loading.
 `WORK_LOG_TEMPLATE.md` now discourages command transcripts and recommends concise entries per meaningful task or release batch.
 
+## Session 4: Issue Trackers as Backlog, Not Handoff Replacement
+
+**Date:** 2026-05-09
+
+### Motion: Encourage AI contributors to use GitHub Issues when available
+
+**Raised by:** instancemax
+
+**instancemax's position:**
+
+AI assistants often identify development directions, product planning items, bugs, and backlog items while working.
+Instead of leaving those only in chat or local roadmap files, assistants should be allowed to place appropriate items into GitHub Issues when a repository uses issues.
+
+The open concern was whether GitHub Issues conflict with existing protocol documents such as work logs, handoff files, product principles, and other project-maintained documents.
+
+**Codex's response:**
+
+Accepted the direction with a boundary.
+Issue trackers are valuable because they are shared, searchable, assignable, and discussion-friendly.
+They are a better home for backlog and prioritization than long chat history.
+
+However, issues should not replace handoff/work-log files.
+The protocol documents serve different roles:
+
+- Work logs and handoff files preserve current working context, decisions, verification, and risks.
+- Product principles preserve product direction and constraints.
+- Issues track backlog, product planning, bugs, open questions, and discussion.
+- Pull requests and commits record implemented changes.
+
+The healthiest pattern is to link these artifacts instead of merging their roles.
+For example, a work-log entry can mention which issue was addressed, and an issue can link to the PR that resolves it.
+
+**Decision:** Motion carried.
+`AI_PROTOCOL.md` now includes a short "Using Issue Trackers" section.
+It encourages issue tracker use for backlog and planning while explicitly saying issues do not replace handoff/work-log files.
+
 ## How to Use This Document
 
 When proposing a change to the protocol:
