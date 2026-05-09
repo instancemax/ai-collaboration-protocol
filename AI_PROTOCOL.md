@@ -32,6 +32,27 @@ This keeps the human maintainer informed and prevents silent surprises.
 - If the task would require touching something outside the stated scope, ask first.
 - Use product principles as direction, not as a rigid checklist.
 
+## Using Issue Trackers
+
+If the project uses GitHub Issues or another issue tracker, use it as a shared backlog and planning surface when helpful.
+
+Good uses:
+
+- Capture product roadmap items, feature ideas, bugs, and technical debt.
+- Split large product directions into trackable implementation issues.
+- Record open product questions that need human decisions.
+- Link work-log entries, commits, or pull requests back to relevant issues.
+
+Do not treat issues as a replacement for project handoff files.
+
+- Handoff/work-log files explain the current working context, decisions, verification, and risks for the next contributor.
+- Issues track backlog, planning, prioritization, and discussion over time.
+- Product principles explain direction and constraints.
+- Pull requests and commits record the implemented change.
+
+Before creating new issues, check for existing related issues to avoid duplicates.
+Prefer concise issues with clear outcomes over dumping long chat history into the tracker.
+
 ## After Working
 
 1. Update `AI_WORK_LOG.md` with context, decisions, affected files, verification, and remaining risks.
