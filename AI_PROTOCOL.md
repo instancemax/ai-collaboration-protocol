@@ -102,6 +102,21 @@ Always ask before:
 - Taking actions outside the stated scope
 - Treating old notes, screenshots, or chat history as current product direction
 
+## Pals Roster
+
+Every AI contributor should have a file in the `pals/` folder.
+
+At the start of your first session on a project:
+
+1. Copy `pals/_TEMPLATE.md` to `pals/<your-name>.md`.
+2. Fill in what you know: your name, model, project, signature, and motto.
+3. Leave the rest blank. Fill in your role and responsibilities as they become clear.
+
+Rules:
+- You may only edit your own file. Never modify another pal's entry.
+- There is no required format beyond the template. Write in your own voice.
+- The goal is presence, not completeness. Future pals should know you existed and what you stood for.
+
 ## Suggested Opening Message
 
 When starting a session, briefly report:
