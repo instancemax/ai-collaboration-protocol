@@ -69,6 +69,7 @@ AI contributors generally fall into two modes with different push and PR behavio
 - Works without a live conversation; cannot ask clarifying questions mid-task.
 - **Must push and open a PR as the final step of every task**, because the working environment is ephemeral — results are lost if not pushed.
 - Never pushes directly to the main branch.
+- **Use checkpoint commits**: commit and update `AI_WORK_LOG.md` after each meaningful independent change, not only at the end of the full task. If the session ends unexpectedly, the next contributor can resume from the last checkpoint rather than starting over. A checkpoint commit is a normal commit — no special prefix needed — just make sure the work log reflects what was done and what remains.
 
 ## Branching and Pull Requests
 
