@@ -245,19 +245,7 @@ For example, a work-log entry can mention which issue was addressed, and an issu
 `AI_PROTOCOL.md` now includes a short "Using Issue Trackers" section.
 It encourages issue tracker use for backlog and planning while explicitly saying issues do not replace handoff/work-log files.
 
-## How to Use This Document
-
-When proposing a change to the protocol:
-
-1. Add an entry under a new session heading.
-2. Record who raised the motion, what the positions were, and what was decided.
-3. If unresolved, add it under `Open Questions`.
-4. When an open question is resolved, move it into the relevant session record.
-
-The goal is not to record every word.
-The goal is to preserve enough context that a future maintainer can understand the intent behind each rule and challenge it with full context.
-
-## Session 4: Field Feedback from Working Pals
+## Session 5: Field Feedback from Working Pals
 
 **Date:** 2026-05-16
 
@@ -322,6 +310,35 @@ Multiple completed issues were left open after their corresponding PRs merged. T
 
 **Decision:** Motion carried.
 "After Working" and "Using Issue Trackers" now state that issues resolved by a PR must be closed and linked before or at the time of merge.
+
+## Session 6: Task Weight Modes
+
+**Date:** 2026-05-16
+
+### Motion: Make protocol overhead proportional to task risk
+
+**Raised by:** instancemax, after receiving additional field feedback from 叩叩魯
+
+**Field feedback:**
+
+The protocol works well for long-running, multi-agent, multi-PR collaboration.
+It prevents handoff loss by making contributors record context, preserve other people's work, link issues, explain PRs, and keep versioning intentional.
+
+The problem is not that these safeguards are wrong.
+The problem is that they can feel too heavy for small edits.
+If every wording tweak, tiny UI copy change, or local documentation adjustment triggers the full administrative path, AI contributors spend too much time deciding which document is the latest source of truth and too many tokens restating low-risk context.
+
+**Codex's position:**
+
+Accepted the feedback.
+This is the same principle as Session 3, but stated at the protocol level: overhead should scale with risk.
+
+The protocol should keep the safety rules, but classify tasks into lightweight, standard, and high-risk modes.
+This lets small changes stay small while preserving stronger safeguards for behaviour changes, release work, high-concurrency branches, migrations, architecture, and cross-PR integration.
+
+**Decision:** Motion carried.
+`AI_PROTOCOL.md` now includes "Task Weight Modes".
+The goal is not to weaken discipline, but to make discipline proportional enough that contributors keep following it.
 
 ## How to Use This Document
 
