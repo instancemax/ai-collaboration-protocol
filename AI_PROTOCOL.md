@@ -13,6 +13,50 @@ Read this before making any changes to the project.
 
 Prefer summary-first context loading. The goal is to understand enough to work safely, not to re-read all project history every session.
 
+## Task Weight Modes
+
+Protocol overhead should scale with task risk. Use the lightest mode that still keeps the work safe and understandable.
+
+### Lightweight Tasks
+
+Use for small, low-risk changes such as wording, comments, formatting, or tiny documentation edits.
+
+Always:
+
+- Run `git status --short --branch`.
+- Preserve other contributors' work.
+- Summarize what changed.
+- Run a relevant check if one exists.
+
+Usually skip:
+
+- Deep historical log reading.
+- Roadmap or issue updates.
+- Version bumps.
+- Long work-log entries.
+- Formal handoff beyond a concise final note.
+
+### Standard Tasks
+
+Use for ordinary feature work, bug fixes, documentation changes with real workflow impact, and issue-driven work.
+
+- Use summary-first context loading.
+- Check relevant open issues and PRs.
+- Verify technical prerequisites before stating the plan.
+- Record a decision-focused work-log entry when the change matters for future contributors.
+- Open a PR at the appropriate stage.
+- Bump version only when explicit project versioning and user-visible change require it.
+
+### High-Risk Tasks
+
+Use for architecture, data, permissions, release behaviour, migrations, version conflicts, high-concurrency branches, or cross-PR integration.
+
+- Read deeper relevant history.
+- Check for overlapping PRs and related issues before starting.
+- Use checkpoint commits when work is long-running or cloud-executed.
+- Record clear verification, risks, and remaining work.
+- Ask the maintainer before destructive, ambiguous, or scope-expanding actions.
+
 ## Before You Edit
 
 State briefly:
