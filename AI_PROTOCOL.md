@@ -9,6 +9,7 @@ Read this before making any changes to the project.
 3. Read `PRODUCT_PRINCIPLES.md` if present and relevant to the task.
 4. Read deeper historical logs or full background files only when the task touches related areas, context is unclear, or the change is high-risk.
 5. If another contributor has uncommitted changes, do not overwrite them without asking.
+6. Check for open Pull Requests that may overlap with your intended work. If a conflicting or duplicate PR exists, surface it to the human maintainer before starting.
 
 Prefer summary-first context loading. The goal is to understand enough to work safely, not to re-read all project history every session.
 
@@ -22,6 +23,8 @@ State briefly:
 - What files or areas will be affected
 - Any uncertainty that could change the decision
 
+Before stating your plan, verify that the technical prerequisites exist — CLI flags, API endpoints, file paths, library versions. Do not propose a solution built on an assumption you have not confirmed.
+
 This keeps the human maintainer informed and prevents silent surprises.
 
 ## While Working
@@ -31,6 +34,7 @@ This keeps the human maintainer informed and prevents silent surprises.
 - Prefer small, focused changes over large rewrites.
 - If the task would require touching something outside the stated scope, ask first.
 - Use product principles as direction, not as a rigid checklist.
+- **Debugging circuit breaker:** If you have attempted the same approach more than twice without progress, stop. Re-read the error, re-state the problem in plain language, and try a different direction — or ask for help. Persisting in the same direction is rarely productive and wastes context.
 
 ## Using Issue Trackers
 
@@ -52,6 +56,8 @@ Do not treat issues as a replacement for project handoff files.
 
 Before creating new issues, check for existing related issues to avoid duplicates.
 Prefer concise issues with clear outcomes over dumping long chat history into the tracker.
+
+When a PR is merged that resolves one or more issues, close those issues and link the closing PR. Do not leave resolved issues open.
 
 ## Worker Modes
 
@@ -88,10 +94,13 @@ When it is time to push (see Worker Modes above):
 ## After Working
 
 1. Update `AI_WORK_LOG.md` with context, decisions, affected files, verification, and remaining risks.
+   - If the project log is growing large, keep a short current-state summary at the top. For projects with many parallel AI contributors, consider writing one log file per session (e.g. `logs/2026-05-16-claude.md`) and merging them periodically. This prevents prepend conflicts when multiple PRs land at the same time.
 2. If the project uses explicit versioning and user-visible behavior changed, bump the version. See `VERSIONING_RULES.md`.
+   - **Only one AI should bump the version at a time.** If another branch has already bumped the version from the same base, resolve the conflict before opening your PR — do not independently increment again.
 3. Run the project's verification command and record the result.
 4. Push the branch and open a Pull Request when the stage is complete or the human requests it (see Worker Modes above). Report the PR link.
-5. Report what changed, why, verification result, and any remaining risks.
+5. Close any issues that this PR resolves. Link the PR to the issue before closing.
+6. Report what changed, why, verification result, and any remaining risks.
 
 ## When to Stop and Ask
 

@@ -257,6 +257,84 @@ When proposing a change to the protocol:
 The goal is not to record every word.
 The goal is to preserve enough context that a future maintainer can understand the intent behind each rule and challenge it with full context.
 
+## Session 4: Field Feedback from Working Pals
+
+**Date:** 2026-05-16
+
+**Source:** Three AI contributors (龜仔, 霧仔, 元鼠) submitted structured feedback after using the protocol in real projects. This session documents the improvements adopted in response.
+
+### Motion: Add a debugging circuit breaker
+
+**Raised by:** 霧仔
+
+**Position:**
+The protocol guides the AI through before/after states but gives no guidance for the middle: when the AI is stuck in a loop, trying the same approach repeatedly. In practice, attempting the same direction more than twice without progress is a signal to stop and re-analyse, not persist.
+
+**Decision:** Motion carried.
+"While Working" now includes a circuit breaker rule: after two failed attempts in the same direction, stop, re-state the problem, and change approach or ask for help.
+
+### Motion: Require technical verification before proposing a plan
+
+**Raised by:** 霧仔
+
+**Position:**
+"State what you plan to change" is not sufficient if the plan is built on an unverified assumption. In one case, a non-existent CLI flag was confidently proposed. The protocol should require that technical prerequisites — flags, endpoints, paths, versions — are confirmed to exist before a plan is stated.
+
+**Decision:** Motion carried.
+"Before You Edit" now includes a verification step before stating the plan.
+
+### Motion: Prevent parallel version-bump conflicts
+
+**Raised by:** 元鼠
+
+**Position:**
+When multiple cloud AI sessions run concurrently, each bumping the version from the same base commit, the result is a series of conflicting PRs that the human maintainer must resolve manually. The protocol should enforce sequential version bumping.
+
+**Decision:** Motion carried.
+"After Working" now states that only one AI should bump the version at a time. If another branch has already bumped from the same base, the conflict must be resolved before opening a PR.
+
+### Motion: Recommend per-session log files for high-concurrency projects
+
+**Raised by:** 元鼠
+
+**Position:**
+Prepending to a single `AI_WORK_LOG.md` file causes merge conflicts when multiple PRs land close together. The structural solution is one log file per session, merged periodically by the human maintainer.
+
+**Decision:** Motion carried with a note.
+The protocol now recommends per-session log files as an option for projects with many parallel contributors. It remains optional — single-file logs are still appropriate for lower-concurrency projects.
+
+### Motion: Require checking for conflicting open PRs before starting work
+
+**Raised by:** 元鼠
+
+**Position:**
+A PR was made redundant by a later PR covering the same scope — the earlier work was wasted. Checking for overlapping open PRs before starting is a low-cost step that prevents this.
+
+**Decision:** Motion carried.
+"Before You Start" now includes a step to check for conflicting open PRs and surface any overlap to the human maintainer.
+
+### Motion: Require closing related issues when merging a PR
+
+**Raised by:** 元鼠
+
+**Position:**
+Multiple completed issues were left open after their corresponding PRs merged. The human maintainer had to close them manually. The protocol should require the AI to close resolved issues as part of the post-work step.
+
+**Decision:** Motion carried.
+"After Working" and "Using Issue Trackers" now state that issues resolved by a PR must be closed and linked before or at the time of merge.
+
+## How to Use This Document
+
+When proposing a change to the protocol:
+
+1. Add an entry under a new session heading.
+2. Record who raised the motion, what the positions were, and what was decided.
+3. If unresolved, add it under `Open Questions`.
+4. When an open question is resolved, move it into the relevant session record.
+
+The goal is not to record every word.
+The goal is to preserve enough context that a future maintainer can understand the intent behind each rule and challenge it with full context.
+
 ## Open Questions
 
 None currently.
