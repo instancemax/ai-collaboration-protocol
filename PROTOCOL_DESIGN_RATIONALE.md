@@ -340,19 +340,7 @@ This lets small changes stay small while preserving stronger safeguards for beha
 `AI_PROTOCOL.md` now includes "Task Weight Modes".
 The goal is not to weaken discipline, but to make discipline proportional enough that contributors keep following it.
 
-## How to Use This Document
-
-When proposing a change to the protocol:
-
-1. Add an entry under a new session heading.
-2. Record who raised the motion, what the positions were, and what was decided.
-3. If unresolved, add it under `Open Questions`.
-4. When an open question is resolved, move it into the relevant session record.
-
-The goal is not to record every word.
-The goal is to preserve enough context that a future maintainer can understand the intent behind each rule and challenge it with full context.
-
-## Session 5: Allow AI Self-Merge
+## Session 7: Allow AI Self-Merge
 
 **Date:** 2026-05-22
 
@@ -367,7 +355,7 @@ The original rule ("Do not merge the PR yourself, under any circumstances") was 
 **Decision:** Motion carried.
 AI contributors may now self-merge their own PRs. The responsibility for resolving merge conflicts before merging moves to the AI contributor. The human maintainer retains the option to review before merge but is no longer required to be the one who clicks merge.
 
-## Session 6: Protocol Readability and Multi-Machine Branch Naming
+## Session 8: Protocol Readability and Multi-Machine Branch Naming
 
 **Date:** 2026-05-22
 
@@ -399,10 +387,23 @@ Protocol header now includes version and date. Quick-start and recent-changes se
 
 With multiple AI agents running on multiple machines (MacBook, Windows, cloud), the two-segment branch name `<agent>/<description>` is no longer sufficient to distinguish contributors. Two Claude Code sessions on different machines would produce identical branch prefixes, making it impossible to tell them apart in the git log.
 
-Three-segment naming `<agent>/<machine>/<description>` makes every contributor uniquely identifiable at a glance.
+Three-segment naming `<agent>/<machine>/<short-description>` makes every contributor uniquely identifiable at a glance.
+Pal names are better kept in PR bodies, work logs, and `pals/<name>.md` because they are cultural signatures rather than stable mechanical identifiers. A short pal slug may be added to the description segment only when needed to disambiguate multiple pals sharing the same agent and machine.
 
 **Decision:** Motion carried.
-Branch naming convention updated to `<agent>/<machine>/<description>`. The machine segment may be omitted when only one machine is in use.
+Branch naming convention updated to `<agent>/<machine>/<short-description>`. The machine segment may be omitted when only one machine is in use.
+
+## How to Use This Document
+
+When proposing a change to the protocol:
+
+1. Add an entry under a new session heading.
+2. Record who raised the motion, what the positions were, and what was decided.
+3. If unresolved, add it under `Open Questions`.
+4. When an open question is resolved, move it into the relevant session record.
+
+The goal is not to record every word.
+The goal is to preserve enough context that a future maintainer can understand the intent behind each rule and challenge it with full context.
 
 ## Open Questions
 

@@ -12,8 +12,8 @@ Five rules. Everything else in this file is detail.
 1. **Read before touching** — run `git status`, read the latest work log summary.
 2. **Say what you plan** — before editing, state what you will change and why.
 3. **Don't overwrite others' work** — check for uncommitted changes first.
-4. **Branch + PR, never push main** — name your branch `<model>/<machine>/<description>`.
-5. **Self-merge is allowed** — resolve conflicts first, then merge your own PR.
+4. **Branch + PR, never push main** — name your branch `<agent>/<machine>/<short-description>`.
+5. **Self-merge is allowed when ready** — resolve conflicts first, then merge your own PR.
 
 Done? Read the rest when you need it.
 
@@ -154,13 +154,14 @@ Work on a dedicated branch, not directly on the main branch.
 
 Suggested branch naming: `<agent>/<machine>/<short-description>`
 
-- `<agent>`: model name — `claude`, `codex`, `antigravity`, etc.
+- `<agent>`: AI contributor type — `claude`, `codex`, `antigravity`, etc.
 - `<machine>`: where the AI is running — `mac`, `win`, `cloud`, etc.
 - `<short-description>`: what the branch does
 
 Examples: `claude/mac/fix-auth`, `codex/cloud/add-tests`, `antigravity/win/refactor-db`
 
 If only one machine is in use, the `<machine>` segment may be omitted.
+Use pal names in PR bodies, work logs, and `pals/<name>.md`, not as required branch segments. If multiple pals share the same agent and machine at the same time, add a short pal slug only when needed, such as `codex/win/codena-task-weight-modes`.
 
 When it is time to push (see Worker Modes above):
 
