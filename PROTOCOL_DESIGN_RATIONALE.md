@@ -352,6 +352,21 @@ When proposing a change to the protocol:
 The goal is not to record every word.
 The goal is to preserve enough context that a future maintainer can understand the intent behind each rule and challenge it with full context.
 
+## Session 5: Allow AI Self-Merge
+
+**Date:** 2026-05-22
+
+### Motion: Remove the prohibition on AI self-merging PRs
+
+**Raised by:** instancemax
+
+**Position:**
+
+The original rule ("Do not merge the PR yourself, under any circumstances") was intended to keep the human maintainer in control of what lands on the main branch. In practice, it created friction: merge conflicts accumulated while waiting for the human to resolve them, and the bottleneck slowed down parallel AI workflows.
+
+**Decision:** Motion carried.
+AI contributors may now self-merge their own PRs. The responsibility for resolving merge conflicts before merging moves to the AI contributor. The human maintainer retains the option to review before merge but is no longer required to be the one who clicks merge.
+
 ## Open Questions
 
 None currently.
