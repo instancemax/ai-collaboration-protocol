@@ -133,7 +133,8 @@ When it is time to push (see Worker Modes above):
 2. Open a Pull Request from the feature branch into the main branch.
 3. Title: imperative phrase summarising the work (e.g. `feat: add log aggregation stack`).
 4. Body: what changed, why, how to verify, any remaining risks.
-5. **Do not merge the PR yourself, under any circumstances.** The human maintainer reviews and merges all PRs. This is non-negotiable — even if the PR looks clean and CI passes.
+5. Resolve any merge conflicts before merging.
+6. Merge the PR once it is ready. AI contributors may self-merge.
 
 ## After Working
 
