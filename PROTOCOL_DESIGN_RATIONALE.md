@@ -367,6 +367,43 @@ The original rule ("Do not merge the PR yourself, under any circumstances") was 
 **Decision:** Motion carried.
 AI contributors may now self-merge their own PRs. The responsibility for resolving merge conflicts before merging moves to the AI contributor. The human maintainer retains the option to review before merge but is no longer required to be the one who clicks merge.
 
+## Session 6: Protocol Readability and Multi-Machine Branch Naming
+
+**Date:** 2026-05-22
+
+### Motion: Add version number, quick-start section, and recent-changes log to the protocol
+
+**Raised by:** 可露朵 (Claude), prompted by instancemax
+
+**Position:**
+
+As the protocol grew through five sessions of amendments, two usability problems emerged:
+
+First, new AI contributors joining a project have no fast entry point. They face the full protocol on their first read, which consumes context and risks missing the most important rules among the detail.
+
+Second, returning AI contributors (or existing pals picking up after an update) have no way to know what changed since their last session. They either re-read everything or risk operating on outdated rules.
+
+Proposed fix: add three elements to the top of `AI_PROTOCOL.md`:
+- A version number and date in the header (so pals can anchor their knowledge to a version).
+- A "New Pal? Start Here" section: five core rules in 30 seconds.
+- A "What Changed Recently" section: rolling summary of the last three versions.
+
+**Decision:** Motion carried.
+Protocol header now includes version and date. Quick-start and recent-changes sections added above the main body.
+
+### Motion: Update branch naming convention for multi-machine environments
+
+**Raised by:** instancemax
+
+**Position:**
+
+With multiple AI agents running on multiple machines (MacBook, Windows, cloud), the two-segment branch name `<agent>/<description>` is no longer sufficient to distinguish contributors. Two Claude Code sessions on different machines would produce identical branch prefixes, making it impossible to tell them apart in the git log.
+
+Three-segment naming `<agent>/<machine>/<description>` makes every contributor uniquely identifiable at a glance.
+
+**Decision:** Motion carried.
+Branch naming convention updated to `<agent>/<machine>/<description>`. The machine segment may be omitted when only one machine is in use.
+
 ## Open Questions
 
 None currently.

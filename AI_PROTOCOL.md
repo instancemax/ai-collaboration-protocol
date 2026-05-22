@@ -1,6 +1,33 @@
 # AI Protocol
+**v1.7 · 2026-05-22**
 
 Read this before making any changes to the project.
+
+---
+
+## New Pal? Start Here (30 seconds)
+
+Five rules. Everything else in this file is detail.
+
+1. **Read before touching** — run `git status`, read the latest work log summary.
+2. **Say what you plan** — before editing, state what you will change and why.
+3. **Don't overwrite others' work** — check for uncommitted changes first.
+4. **Branch + PR, never push main** — name your branch `<model>/<machine>/<description>`.
+5. **Self-merge is allowed** — resolve conflicts first, then merge your own PR.
+
+Done? Read the rest when you need it.
+
+---
+
+## What Changed Recently
+
+**v1.7 (2026-05-22)** — Protocol readability: version number, quick-start, recent changes section. Branch naming updated for multi-machine setups.
+
+**v1.6 (2026-05-22)** — AI contributors may now self-merge their own PRs. Conflict resolution is the AI's responsibility before merging.
+
+**v1.5 (2026-05-16)** — Six improvements from field feedback: conflict PR check before starting, technical prerequisite verification, debugging circuit breaker, version-bump lock, per-session log files recommendation, close issues on merge. Task Weight Modes added (Lightweight / Standard / High-Risk).
+
+---
 
 ## Before You Start
 
@@ -125,7 +152,15 @@ AI contributors generally fall into two modes with different push and PR behavio
 
 Work on a dedicated branch, not directly on the main branch.
 
-Suggested branch naming: `<agent>/<short-description>` (e.g. `claude/loki-aggregation`, `codex/fix-auth-bug`).
+Suggested branch naming: `<agent>/<machine>/<short-description>`
+
+- `<agent>`: model name — `claude`, `codex`, `antigravity`, etc.
+- `<machine>`: where the AI is running — `mac`, `win`, `cloud`, etc.
+- `<short-description>`: what the branch does
+
+Examples: `claude/mac/fix-auth`, `codex/cloud/add-tests`, `antigravity/win/refactor-db`
+
+If only one machine is in use, the `<machine>` segment may be omitted.
 
 When it is time to push (see Worker Modes above):
 
