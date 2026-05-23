@@ -5,6 +5,19 @@ Designed for projects where humans and multiple AI assistants share a codebase o
 
 > Good process should preserve quality even when context is incomplete, memory is lost, or a different AI takes over.
 
+---
+
+## 這個 Repo 有兩個部分
+
+| 部分 | 資料夾 / 文件 | 用途 |
+|---|---|---|
+| **AI 工作守則** | `AI_PROTOCOL.md` 等 | 通用規範，任何專案都可以採用 |
+| **指揮中心** | `command-center/` | instancemax 個人的專案狀態與全局視角 |
+
+**新帕魯請先讀 `AI_PROTOCOL.md`，再讀 `command-center/ACTIVE_WORK.md` 了解目前在做什麼。**
+
+---
+
 ## Why This Exists
 
 AI assistants do not reliably carry memory across sessions. Without shared conventions, critical decisions stay trapped in chat history and the next contributor, human or AI, starts blind.
