@@ -1,5 +1,5 @@
 # AI Protocol
-**v1.8 · 2026-05-22**
+**v1.9 · 2026-05-22**
 
 Read this before making any changes to the project.
 
@@ -21,7 +21,9 @@ Done? Read the rest when you need it.
 
 ## What Changed Recently
 
-**v1.8 (2026-05-22)** — Pals roster updated for multi-machine: per-instance file naming `<name>-<machine>.md`, INDEX.md team overview, claudette-cloud.md added.
+**v1.9 (2026-05-22)** — Command Center added: `command-center/PROJECTS.md` + `ACTIVE_WORK.md`. README updated to explain the two-layer structure. New pals now get full global context on onboarding.
+
+**v1.8 (2026-05-22)** — Multi-machine pals roster: per-instance file naming `<name>-<machine>.md`, `pals/INDEX.md` team overview, claudette-cloud.md added.
 
 **v1.7 (2026-05-22)** — Protocol readability: version number, quick-start, recent changes section. Branch naming updated for multi-machine setups.
 

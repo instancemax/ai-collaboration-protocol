@@ -1,0 +1,44 @@
+# Active Work
+
+目前正在進行中的工作。隨時更新，不要讓這份文件過期。
+
+**維護說明：** 開始新工作時加一行，完成或暫停時移到下方「最近完成」。
+
+---
+
+## 進行中
+
+| 專案 | 工作內容 | 負責帕魯 | Branch / PR / Issue | 需要 human 決策？ |
+|---|---|---|---|---|
+| AI工作守則 | 多機器 pals roster (v1.8) | 可露朵 | PR #12 (draft) | 等 merge |
+| AI工作守則 | Command Center 建立 (v1.9) | 可露朵 | PR #13 (draft) | 等 merge |
+
+---
+
+## 等待 human 決策
+
+> 這裡列出卡住、需要你拍板的事情。帕魯不應該自己決定這些。
+
+- **PR #12** — 多機器 pals roster，請 review 後 merge
+- **PR #13** — Command Center，請 review 後 merge
+
+---
+
+## 最近完成
+
+| 完成時間 | 專案 | 工作內容 | 結果 |
+|---|---|---|---|
+| 2026-05-22 | AI工作守則 | v1.7 可讀性改造 + 多機器 branch 命名 | ✅ merged PR #11 |
+| 2026-05-22 | AI工作守則 | AI 自行 merge 規則 | ✅ merged PR #10 |
+| 2026-05-22 | AI工作守則 | 帕魯花名冊建立 | ✅ merged PR #6 |
+| 2026-05-16 | AI工作守則 | 6 條守則改進（現場回饋） | ✅ merged PR #8 |
+
+---
+
+## 全局 Backlog（尚未派發）
+
+> 腦袋冒出來的想法先丟這裡，不急著做。
+
+- [ ] 各專案帕魯在完成任務後同步更新 PROJECTS.md 的機制
+- [ ] 主任帕魯（Chief of Staff）的 onboarding 流程
+- [ ] HQ repo 的內容填充
