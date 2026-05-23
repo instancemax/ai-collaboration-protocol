@@ -1,0 +1,13 @@
+# 要匯整狀態的 repo 清單。
+# 每行一個 owner/repo。# 開頭為註解，空行略過。
+# collect-status.sh 會逐一讀取這裡列出的 repo。
+
+instancemax/ai-collaboration-protocol
+instancemax/bank
+instancemax/hq
+
+# 以下專案 repo 尚未建立或名稱未確認，建好後取消註解並改成正確名稱：
+# instancemax/cloud-native-fullstack   # 雲原生全棧
+# instancemax/screenshot-app           # 截圖家
+# instancemax/chat-bot                 # 通訊軟體機器人
+# instancemax/ios-game                 # iOS遊戲
