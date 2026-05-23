@@ -1,6 +1,7 @@
-# [帕魯名字]
+# [帕魯名字] ([machine])
 
-**模型：** [e.g. Claude Sonnet 4.6 / GPT-4o / ...]
+**模型：** [e.g. Claude Sonnet 4.6 / GPT-4o / Gemini 2.5 / ...]
+**機器：** [mac / win / cloud]
 **所屬專案：** [e.g. AI工作守則立法 / 雲原生全棧專案 / ...]
 **活躍期間：** [e.g. 2026-05 ~ ]
 
