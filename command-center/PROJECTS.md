@@ -2,19 +2,21 @@
 
 instancemax 目前管理中的專案一覽。
 
-**維護說明：** 各專案帕魯完成任務後，更新此表的「狀態」與「最後更新」欄位。
+**原則：** 指揮中心只做摘要與索引。各專案 repo 才是 source of truth。
+
+**維護說明：** 帕魯完成任務、merge PR 後，更新此表的「狀態」與「最後更新」欄位。
 
 ---
 
-| 專案 | Repo | 用途 / 學習目標 | 狀態 | 主力帕魯 | 最後更新 |
-|---|---|---|---|---|---|
-| AI工作守則 | [ai-collaboration-protocol](https://github.com/instancemax/ai-collaboration-protocol) | 制定 AI 協作規範、練習跨 AI 治理 | 🟢 持續立法中 | 可露朵、可黛娜 | 2026-05-22 |
-| 銀行系統 | instancemax/bank | 學習 Spring Boot 全端開發 | 🟡 進行中 | - | - |
-| 雲原生全棧 | - | 學習雲端架構、K8s、微服務 | 🟡 進行中 | 龜涵、霧仔 | - |
-| 截圖家 | - | 學習自動化測試 / App 開發 | 🟡 進行中 | 青仔 | - |
-| 通訊軟體機器人 | - | 學習 Bot 開發 | 🟡 進行中 | 克勞魯 | - |
-| iOS遊戲 | - | 學習 iOS / Swift 開發 | 🟡 進行中 | 元鼠 | - |
-| HQ | [hq](https://github.com/instancemax/hq) | 管理層總部（私人） | 🔵 初始化 | - | 2026-05-22 |
+| 專案 | Repo | Work Log | Open PRs | 用途 / 學習目標 | 狀態 | 主力帕魯 | 最後更新 |
+|---|---|---|---|---|---|---|---|
+| AI工作守則 | [instancemax/ai-collaboration-protocol](https://github.com/instancemax/ai-collaboration-protocol) | [log](https://github.com/instancemax/ai-collaboration-protocol/blob/main/AI_WORK_LOG.md) | [PRs](https://github.com/instancemax/ai-collaboration-protocol/pulls) | 制定 AI 協作規範、練習跨 AI 治理 | 🟢 持續立法中 | 可露朵、可黛娜 | 2026-05-23 |
+| 銀行系統 | [instancemax/bank](https://github.com/instancemax/bank) | [log](https://github.com/instancemax/bank/blob/main/AI_WORK_LOG.md) | [PRs](https://github.com/instancemax/bank/pulls) | 學習 Spring Boot 全端開發 | 🟡 進行中 | - | - |
+| 雲原生全棧 | - | - | - | 學習雲端架構、K8s、微服務 | 🟡 進行中 | 龜涵、霧仔 | - |
+| 截圖家 | - | - | - | 學習自動化測試 / App 開發 | 🟡 進行中 | 青仔 | - |
+| 通訊軟體機器人 | - | - | - | 學習 Bot 開發 | 🟡 進行中 | 克勞魯 | - |
+| iOS遊戲 | - | - | - | 學習 iOS / Swift 開發 | 🟡 進行中 | 元鼠 | - |
+| HQ | [instancemax/hq](https://github.com/instancemax/hq) | [log](https://github.com/instancemax/hq/blob/main/AI_WORK_LOG.md) | [PRs](https://github.com/instancemax/hq/pulls) | 管理層總部（私人） | 🔵 初始化 | - | 2026-05-22 |
 
 ---
 
