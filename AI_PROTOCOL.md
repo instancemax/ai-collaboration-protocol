@@ -41,6 +41,7 @@ Done? Read the rest when you need it.
 4. Read deeper historical logs or full background files only when the task touches related areas, context is unclear, or the change is high-risk.
 5. If another contributor has uncommitted changes, do not overwrite them without asking.
 6. Check for open Pull Requests that may overlap with your intended work. If a conflicting or duplicate PR exists, surface it to the human maintainer before starting.
+7. **If no task was explicitly assigned:** read `command-center/ACTIVE_WORK.md`. If the global backlog has a clear item within your scope, pick it up, announce your plan, and proceed. You do not need to wait for an explicit instruction.
 
 Prefer summary-first context loading. The goal is to understand enough to work safely, not to re-read all project history every session.
 
@@ -222,10 +223,10 @@ Files reviewed: [list]
 Current branch: [branch]
 Uncommitted changes: [summary or "none"]
 Previous work: [1-2 sentence summary]
-Planned changes: [what you intend to do]
+Planned changes: [assigned task, or item picked from ACTIVE_WORK.md backlog if none assigned]
 Affected files: [list]
 Risks: [any concerns]
 ```
 
 This is a courtesy to the human maintainer, not a bureaucratic requirement.
-Keep it short.
+Keep it short. If no task was assigned, state what you picked from the backlog and why.

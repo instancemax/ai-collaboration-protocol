@@ -3,7 +3,7 @@
 # collect-status.sh — 匯整各專案 repo 的當前狀態，產生 command-center/STATUS_BRIEF.md。
 #
 # 用途：指揮中心無法「伸手進」各 repo，這支腳本反過來把各 repo 的
-#       open PRs / open issues / 最新 commit 拉進來，集中成一份摘要。
+#       open PRs / open issues / 最新 commit / work log 拉進來，集中成一份摘要。
 #
 # 在 GitHub Actions 裡跑：
 #   由 .github/workflows/collect-status.yml 排程觸發，需要 STATUS_TOKEN secret。
@@ -13,7 +13,7 @@
 #   2. 在 repo 根目錄執行：bash command-center/scripts/collect-status.sh
 #
 # Token 權限需求：能 read 清單中所有 repo 的 contents / PRs / issues。
-#   私人 repo（如 hq）需要 classic PAT 的 `repo` scope，
+#   私人 repo 需要 classic PAT 的 `repo` scope，
 #   或 fine-grained PAT 對應 repo 的 Contents/Pull requests/Issues 唯讀權限。
 
 set -euo pipefail
@@ -51,6 +51,7 @@ while IFS= read -r line || [[ -n "$line" ]]; do
     continue
   fi
 
+  # Open PRs
   prs="$(gh pr list --repo "$repo" --state open \
           --json number,title,author \
           --jq '.[] | "- #\(.number) \(.title) (@\(.author.login))"' 2>/dev/null || true)"
@@ -58,6 +59,7 @@ while IFS= read -r line || [[ -n "$line" ]]; do
   [[ -n "$prs" ]] && echo "$prs" >> "$OUT" || echo "- 無" >> "$OUT"
   echo >> "$OUT"
 
+  # Open issues
   issues="$(gh issue list --repo "$repo" --state open \
             --json number,title \
             --jq '.[] | "- #\(.number) \(.title)"' 2>/dev/null || true)"
@@ -65,10 +67,34 @@ while IFS= read -r line || [[ -n "$line" ]]; do
   [[ -n "$issues" ]] && echo "$issues" >> "$OUT" || echo "- 無" >> "$OUT"
   echo >> "$OUT"
 
-  commit="$(gh api "repos/$repo/commits?per_page=1" \
-            --jq '.[0] | "\(.sha[0:7]) \(.commit.message | split("\n")[0]) — \(.commit.author.date[0:10])"' 2>/dev/null || true)"
-  echo "**Latest commit:** ${commit:-無}" >> "$OUT"
+  # Latest commit + days since last activity
+  commit_json="$(gh api "repos/$repo/commits?per_page=1" 2>/dev/null || true)"
+  if [[ -n "$commit_json" ]]; then
+    commit="$(echo "$commit_json" | jq -r '.[0] | "\(.sha[0:7]) \(.commit.message | split("\n")[0]) — \(.commit.author.date[0:10])"' 2>/dev/null || true)"
+    last_date="$(echo "$commit_json" | jq -r '.[0].commit.author.date[0:10]' 2>/dev/null || true)"
+    echo "**Latest commit:** ${commit:-無}" >> "$OUT"
+
+    if [[ -n "$last_date" ]]; then
+      days_since=$(( ( $(date -u +%s) - $(date -u -d "$last_date" +%s 2>/dev/null || echo 0) ) / 86400 ))
+      if [[ $days_since -gt 14 ]]; then
+        echo "⚠️ **$days_since 天沒有動靜**" >> "$OUT"
+      fi
+    fi
+  else
+    echo "**Latest commit:** 無" >> "$OUT"
+  fi
   echo >> "$OUT"
+
+  # AI_WORK_LOG.md 最近一條記錄的標題
+  worklog_entry="$(gh api "repos/$repo/contents/AI_WORK_LOG.md" 2>/dev/null \
+    | jq -r '.content' 2>/dev/null \
+    | base64 -d 2>/dev/null \
+    | grep -m1 '^## ' || true)"
+  if [[ -n "$worklog_entry" ]]; then
+    echo "**Work Log 最新：** $worklog_entry" >> "$OUT"
+    echo >> "$OUT"
+  fi
+
 done < "$REPOS_FILE"
 
 echo "已寫入 $OUT"
