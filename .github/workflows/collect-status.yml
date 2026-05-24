@@ -1,0 +1,50 @@
+name: Collect Status
+
+# 匯整各專案 repo 狀態，更新 command-center/STATUS_BRIEF.md。
+# 需要 STATUS_TOKEN secret（能讀清單中所有 repo 的 PAT）。
+# 未設定 token 時會優雅跳過，不會讓 workflow 失敗。
+
+on:
+  schedule:
+    - cron: '0 22 * * *'   # 每天 22:00 UTC（台灣早上 06:00）
+  workflow_dispatch:        # 也可手動觸發
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check token
+        id: token
+        env:
+          STATUS_TOKEN: ${{ secrets.STATUS_TOKEN }}
+        run: |
+          if [ -z "$STATUS_TOKEN" ]; then
+            echo "::warning::尚未設定 STATUS_TOKEN secret，略過狀態匯整。設定方式見 command-center/scripts/collect-status.sh 檔頭。"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Collect status
+        if: steps.token.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.STATUS_TOKEN }}
+        run: bash command-center/scripts/collect-status.sh
+
+      - name: Commit changes
+        if: steps.token.outputs.ready == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add command-center/STATUS_BRIEF.md
+          if git diff --staged --quiet; then
+            echo "狀態無變化，不需 commit。"
+          else
+            git commit -m "chore: update status brief [skip ci]"
+            git push
+          fi
