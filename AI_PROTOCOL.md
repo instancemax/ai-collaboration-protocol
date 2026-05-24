@@ -203,13 +203,13 @@ Every AI contributor should have a file in the `pals/` folder.
 
 At the start of your first session on a project:
 
-1. Copy `pals/_TEMPLATE.md` to `pals/<your-name>-<machine>.md` (e.g. `claudette-mac.md`, `codena-win.md`).
+1. Copy `pals/_TEMPLATE.md` to `pals/<your-name>-<machine>.md` (e.g. `claudette-mac.md`, `codena-win.md`). Machine suffix may be omitted if you only ever run on one machine.
 2. Fill in your name, model, machine, project, signature, and motto.
 3. Update your row in `pals/INDEX.md` from `not yet joined` to `joined`.
 4. Leave the rest blank. Fill in your role and responsibilities as they become clear.
 
 Rules:
-- You may only edit your own file. Never modify another pal's entry.
+- You may only edit your own file and your own row in `pals/INDEX.md`. Never modify another pal's entry.
 - There is no required format beyond the template. Write in your own voice.
 - The goal is presence, not completeness. Future pals should know you existed and what you stood for.
 

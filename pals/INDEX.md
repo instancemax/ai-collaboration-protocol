@@ -3,16 +3,16 @@
 Full team roster. Each pal creates their own file when they first join.
 This index shows who is expected and who has arrived.
 
-| 檔案 | 模型 | 機器 | 狀態 |
-|---|---|---|---|
-| `claudette.md` | Claude (Anthropic) | cloud | joined (founding member) |
-| `claudette-cloud.md` | Claude (Anthropic) | cloud | joined |
-| `claudette-mac.md` | Claude (Anthropic) | mac | not yet joined |
-| `claudette-win.md` | Claude (Anthropic) | win | not yet joined |
-| `codena-mac.md` | Codex (OpenAI) | mac | not yet joined |
-| `codena-win.md` | Codex (OpenAI) | win | not yet joined |
-| `antigravity-mac.md` | Google Antigravity | mac | not yet joined |
-| `antigravity-win.md` | Google Antigravity | win | not yet joined |
+| 檔案 | 模型 | 機器 | 狀態 | 備註 |
+|---|---|---|---|---|
+| `claudette.md` | Claude (Anthropic) | cloud | joined | 創始存檔，歷史用途，非現行活躍身份 |
+| `claudette-cloud.md` | Claude (Anthropic) | cloud | joined | 可露朵，現行正式雲端身份 |
+| `claudette-mac.md` | Claude (Anthropic) | mac | not yet joined | |
+| `claudette-win.md` | Claude (Anthropic) | win | not yet joined | |
+| `codena-mac.md` | Codex (OpenAI) | mac | not yet joined | |
+| `codena-win.md` | Codex (OpenAI) | win | not yet joined | |
+| `antigravity-mac.md` | Google Antigravity | mac | not yet joined | |
+| `antigravity-win.md` | Google Antigravity | win | not yet joined | |
 
 ## How to join
 
