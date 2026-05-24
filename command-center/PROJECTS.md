@@ -16,7 +16,7 @@ instancemax 目前管理中的專案一覽。
 | 截圖家 | - | - | - | 學習自動化測試 / App 開發 | 🟡 進行中 | 青仔 | - |
 | 通訊軟體機器人 | - | - | - | 學習 Bot 開發 | 🟡 進行中 | 克勞魯 | - |
 | iOS遊戲 | - | - | - | 學習 iOS / Swift 開發 | 🟡 進行中 | 元鼠 | - |
-| HQ | [instancemax/hq](https://github.com/instancemax/hq) | [log](https://github.com/instancemax/hq/blob/main/AI_WORK_LOG.md) | [PRs](https://github.com/instancemax/hq/pulls) | 管理層總部（私人） | 🔵 初始化 | - | 2026-05-22 |
+| HQ | ← 職能已整併至本 repo 的 `command-center/` | - | - | 管理層總部 | ✅ 整併完成 | - | 2026-05-24 |
 
 ---
 
