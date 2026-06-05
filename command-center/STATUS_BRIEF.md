@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-06-04 22:59 UTC
+> 最後更新：2026-06-05 22:55 UTC
 
 ---
 
@@ -14,11 +14,12 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** b381fe6 chore: update status brief [skip ci] — 2026-06-03
+**Latest commit:** 52c3a7d chore: update status brief [skip ci] — 2026-06-04
 
 ## instancemax/bank
 
 **Open PRs:**
+- #178 docs(handoff): 補上 2026-06-03–06-05 session 工作記錄 (@instancemax)
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
 **Open Issues:**
@@ -26,7 +27,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** 1e69531 feat(wealthcore): 第三方資產 Core — Avaloq 仿真（OMS + 公司行動） — 2026-06-03
+**Latest commit:** 051decc docs(roadmap): 更新宇宙地圖至 2026-06-05 現況 (#177) — 2026-06-05
 
-**Work Log 最新：** ## 2026-06-03 — 寶寶（Sonnet 4.6）自主開發 session 2
+**Work Log 最新：** ## 2026-06-05 — 寶寶（Sonnet 4.6）自主開發：證券金融精度修正
 
