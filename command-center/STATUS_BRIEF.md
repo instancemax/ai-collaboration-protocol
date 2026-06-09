@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-06-08 23:05 UTC
+> 最後更新：2026-06-09 23:07 UTC
 
 ---
 
@@ -14,12 +14,12 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 0c9f150 chore: update status brief [skip ci] — 2026-06-07
+**Latest commit:** 60df9bd chore: update status brief [skip ci] — 2026-06-08
 
 ## instancemax/bank
 
 **Open PRs:**
-- #178 docs(handoff): 補上 2026-06-03–06-05 session 工作記錄 (@instancemax)
+- #181 security: fix 10 vulnerabilities (CRIT×4 HIGH×4 MED×2) (@instancemax)
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
 **Open Issues:**
@@ -27,7 +27,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** c456730 feat(ci): add JaCoCo code coverage reporting (#179) — 2026-06-08
+**Latest commit:** c4545c9 test(core): Card/Wealth Core 服務層測試 + JaCoCo 覆蓋率門檻 (#180) — 2026-06-09
 
-**Work Log 最新：** ## 2026-06-05 — 寶寶（Sonnet 4.6）自主開發：證券金融精度修正
+**Work Log 最新：** ## 2026-06-09 — 寶寶（Opus）自主開發：Core 套件單元測試 + 覆蓋率門檻
 
