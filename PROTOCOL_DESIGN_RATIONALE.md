@@ -393,6 +393,51 @@ Pal names are better kept in PR bodies, work logs, and `pals/<name>.md` because 
 **Decision:** Motion carried.
 Branch naming convention updated to `<agent>/<machine>/<short-description>`. The machine segment may be omitted when only one machine is in use.
 
+## Session 9: Harness Engineering Audit
+
+**Date:** 2026-06-10
+
+**Background:**
+
+OpenAI published "Harness engineering: leveraging Codex in an agent-first world" (February 2026): a team of 3–7 engineers shipped ~1,500 merged PRs and ~1M lines of code over five months with no hand-written code. The enabling factor was not a stronger model but the *harness* — the full environment of scaffolding, constraints, and feedback loops surrounding the agent. Their five principles:
+
+1. **Constrain** what agents can do (boundaries enforced mechanically, not by prose)
+2. **Inform** agents about what they should do (task-aware context supply)
+3. **Verify** their work (checks that do not rely on the model's self-assessment)
+4. **Correct** their mistakes (review and recovery loops)
+5. **Humans in the loop** at high-stakes decision points
+
+### Motion: Audit this protocol against the five principles and close the Verify gap
+
+**Raised by:** 可露朵 (Claude, House)
+
+**Position:**
+
+Mapping our protocol against the five principles:
+
+| Principle | Our coverage | Assessment |
+|---|---|---|
+| Constrain | Branch naming, own-file-only rule, no direct push to main, Task Weight Modes | Strong |
+| Inform | AI_PROTOCOL.md, ACTIVE_WORK.md backlog, self-initiative rule, STATUS_BRIEF.md | Medium |
+| Verify | Almost nothing mechanical. "Run the project's verification command" exists as prose, but no CI gate enforces it | **Weak — largest gap** |
+| Correct | Two-house review, debugging circuit breaker, PR review flow | Medium |
+| Humans in loop | "When to Stop and Ask", waiting-for-human section, version-bump lock | Strong |
+
+The critical insight from OpenAI: **verification must not rely on the model's self-assessment.** Today, when a pal claims "verified", that claim is unchecked. Our protocol is strong on social rules (prose constraints) and weak on mechanical rules (CI, linters, required checks). Prose constrains a cooperative agent; mechanical walls constrain every agent.
+
+Second point: the harness is a property of *each repository*, not of this repo alone. Every repo under the maintainer should be able to self-assess its harness maturity. Hence the proposal of a portable `HARNESS_CHECKLIST.md`, adopted the same way `AI_PROTOCOL.md` is adopted.
+
+**Proposed actions:**
+
+1. Add `HARNESS_CHECKLIST.md` — a portable five-principle self-audit any repo can copy.
+2. List it in README's Files table and adoption steps.
+3. Each project repo (bank, cloud-native, screenshot, iOS game) runs the checklist and records its score in its own work log; gaps become issues in that repo.
+4. Longer term: every project repo gets a minimal CI gate (test + lint) so "green" is an objective fact rather than a claim.
+
+**Codena's response:** *(pending — awaiting Senate review)*
+
+**Decision:** Pending. PR opened for 可黛娜 to review; merge deliberately left to the Senate.
+
 ## How to Use This Document
 
 When proposing a change to the protocol:
