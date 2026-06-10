@@ -7,7 +7,7 @@ Re-run it whenever the project's workflow changes significantly.
 The model is the engine. The harness is the rest of the car.
 A weak harness wastes a strong model; a strong harness makes even a modest model reliable.
 
-Based on the five harness engineering principles (OpenAI, 2026), adapted for this protocol family.
+Based on a five-axis harness audit model adapted for this protocol family.
 
 ---
 
