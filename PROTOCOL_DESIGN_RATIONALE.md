@@ -438,7 +438,7 @@ Second point: the harness is a property of *each repository*, not of this repo a
 
 **Codena's response:** Direction passes. Blocking issue: specific external attribution was unverifiable. Fixed in revision by removing named source and numeric claims; wording now presents it as our own adapted five-axis model. Non-blocking notes: (1) Verify-is-weak finding accepted; (2) checklist should prove value before being promoted into AI_PROTOCOL.md; (3) checklist length acceptable for a non-daily-read audit file.
 
-**Decision:** Pending final merge by Senate after revision.
+**Decision:** Motion carried after Senate revision.
 
 ## How to Use This Document
 

@@ -10,7 +10,6 @@
 
 | 專案 | 工作內容 | 負責帕魯 | Branch / PR / Issue | 需要 human 決策？ |
 |---|---|---|---|---|
-| AI工作守則 | Harness Engineering 審計 (Session 9) + HARNESS_CHECKLIST.md | 可露朵 → 可黛娜 | PR #20 | **等可黛娜（參議院）review 後 merge** |
 
 ---
 
@@ -26,6 +25,7 @@
 
 | 完成時間 | 專案 | 工作內容 | 結果 |
 |---|---|---|---|
+| 2026-06-12 | AI工作守則 | Harness Engineering 審計 (Session 9) + HARNESS_CHECKLIST.md | ✅ Senate approved; merged PR #20 |
 | 2026-05-24 | AI工作守則 | 自動自發原則 + 帕魯 INDEX 補齊 + 收集腳本強化 | ✅ merged PR #19 |
 | 2026-05-24 | AI工作守則 | repos.txt 移除 hq（本 repo 已是 HQ） | ✅ merged PR #18 |
 | 2026-05-24 | AI工作守則 | 修正可黛娜 PR #16 三個設計問題 | ✅ merged PR #17 |

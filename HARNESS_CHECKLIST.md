@@ -15,7 +15,7 @@ Based on a five-axis harness audit model adapted for this protocol family.
 
 For each item: ✅ in place / 🟡 partial / ❌ missing.
 Don't aim for all-✅ on day one. Aim to know exactly where your gaps are,
-and turn each ❌ you care about into an issue in this repo.
+and turn each ❌ you care about into an issue in the target repo.
 
 ---
 
@@ -24,7 +24,7 @@ and turn each ❌ you care about into an issue in this repo.
 Mechanical walls beat polite requests. Prose constrains a cooperative agent; walls constrain every agent.
 
 - [ ] Feature work happens on branches; main is never pushed directly
-- [ ] Branch naming convention exists and is documented (`<agent>/<machine>/<description>`)
+- [ ] Branch naming convention exists and is documented (`<agent>/<machine>/<short-description>`)
 - [ ] Ownership boundaries are explicit (which files/areas an agent may not touch)
 - [ ] Secrets and credentials are never in the repo; agents physically cannot read them
 - [ ] Risky operations (deletes, migrations, releases) require explicit human approval
