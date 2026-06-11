@@ -2,19 +2,19 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-06-10 23:17 UTC
+> 最後更新：2026-06-11 23:12 UTC
 
 ---
 
 ## instancemax/ai-collaboration-protocol
 
 **Open PRs:**
-- #20 docs: Session 9 — harness engineering audit + portable HARNESS_CHECKLIST.md (@instancemax)
+- 無
 
 **Open Issues:**
 - 無
 
-**Latest commit:** f3ef834 chore: update status brief [skip ci] — 2026-06-09
+**Latest commit:** 089aa22 Merge PR #20: Add harness checklist audit — 2026-06-11
 
 ## instancemax/bank
 
