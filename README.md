@@ -41,6 +41,7 @@ This protocol embeds the minimum useful context into the project itself.
 | `WORK_LOG_TEMPLATE.md` | Template for logging decisions and handoff context |
 | `VERSIONING_RULES.md` | When and how to bump version numbers |
 | `PRODUCT_PRINCIPLES_TEMPLATE.md` | Optional template for product direction |
+| `HARNESS_CHECKLIST.md` | Five-principle self-audit of how agent-ready a repo is. Copy into any repo |
 | `PROTOCOL_DESIGN_RATIONALE.md` | For human maintainers only. AI sessions do not need to read this |
 
 ## Adopting This Protocol
@@ -51,6 +52,7 @@ This protocol embeds the minimum useful context into the project itself.
 4. If using Claude Code, paste the contents of `AI_PROTOCOL.md` into `CLAUDE.md` in the project root.
 5. If using Cursor or a similar tool, put the contents of `AI_PROTOCOL.md` where the tool loads project instructions automatically.
 6. If using a pure API flow, prepend `AI_PROTOCOL.md` to the system prompt or instruct the AI to read it at session start.
+7. Copy `HARNESS_CHECKLIST.md` into the repo and run the audit once. Record the score in the work log; turn the gaps you care about into issues.
 
 Suggested first commit message:
 
