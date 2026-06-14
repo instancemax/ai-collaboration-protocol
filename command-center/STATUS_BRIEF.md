@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-06-13 22:51 UTC
+> 最後更新：2026-06-14 22:57 UTC
 
 ---
 
@@ -14,12 +14,11 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** e485bcb chore: update status brief [skip ci] — 2026-06-12
+**Latest commit:** 9ff091d chore: update status brief [skip ci] — 2026-06-13
 
 ## instancemax/bank
 
 **Open PRs:**
-- #182 docs: 寶寶 session 交接 — 安全審查 + VPS 上線 + Protocol v1.9 (@instancemax)
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
 **Open Issues:**
@@ -27,7 +26,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** b39d17a feat(deploy): harden compose for VPS prod — localhost-bind internal ports, parameterize secrets (#184) — 2026-06-13
+**Latest commit:** d2f1b00 docs(deploy): add VPS_SETUP.md (D2) + record D0-D3 deploy & Flyway fix (#188) — 2026-06-14
 
-**Work Log 最新：** ## 2026-06-09 — 寶寶（Opus）自主開發：Core 套件單元測試 + 覆蓋率門檻
+**Work Log 最新：** ## 2026-06-14 — 寶寶（Opus 4.8）：VPS 部署 D0–D3 + 修 Boot 4 Flyway bug
 
