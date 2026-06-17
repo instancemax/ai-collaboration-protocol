@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-06-16 23:16 UTC
+> 最後更新：2026-06-17 23:14 UTC
 
 ---
 
@@ -14,11 +14,12 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 473ae95 chore: update status brief [skip ci] — 2026-06-15
+**Latest commit:** 6917e3d chore: update status brief [skip ci] — 2026-06-16
 
 ## instancemax/bank
 
 **Open PRs:**
+- #189 deploy: D4 Cloudflare Tunnel 上線 + compose 修正 + 交接文件 (@instancemax)
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
 **Open Issues:**
