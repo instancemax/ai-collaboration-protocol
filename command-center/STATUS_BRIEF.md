@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-06-19 22:41 UTC
+> 最後更新：2026-06-20 22:55 UTC
 
 ---
 
@@ -14,12 +14,11 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 1225431 chore: update status brief [skip ci] — 2026-06-18
+**Latest commit:** 04532af chore: update status brief [skip ci] — 2026-06-19
 
 ## instancemax/bank
 
 **Open PRs:**
-- #189 deploy: D4 Cloudflare Tunnel 上線 + compose 修正 + 交接文件 (@instancemax)
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
 **Open Issues:**
@@ -27,7 +26,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** d2f1b00 docs(deploy): add VPS_SETUP.md (D2) + record D0-D3 deploy & Flyway fix (#188) — 2026-06-14
+**Latest commit:** b614714 fix: remove mock-token backdoor, add 401 auto-logout, fix CORS, add prod demo user — 2026-06-20
 
-**Work Log 最新：** ## 2026-06-14 — 寶寶（Opus 4.8）：VPS 部署 D0–D3 + 修 Boot 4 Flyway bug
+**Work Log 最新：** ## 2026-06-20 — 寶寶（Opus 4.8）：修登入鏈路（假後門 / 401 / CORS / demo 帳號）
 
