@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-06-21 22:57 UTC
+> 最後更新：2026-06-22 23:10 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 1e4bfd5 chore: update status brief [skip ci] — 2026-06-20
+**Latest commit:** 3066bab chore: update status brief [skip ci] — 2026-06-21
 
 ## instancemax/bank
 
