@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-06-25 23:05 UTC
+> 最後更新：2026-06-26 22:57 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 1fa8952 chore: update status brief [skip ci] — 2026-06-24
+**Latest commit:** df7925b chore: update status brief [skip ci] — 2026-06-25
 
 ## instancemax/bank
 
@@ -26,7 +26,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** b614714 fix: remove mock-token backdoor, add 401 auto-logout, fix CORS, add prod demo user — 2026-06-20
+**Latest commit:** b60dd05 feat: 新增 6 個專案 slash command (.claude/commands/) — 2026-06-26
 
-**Work Log 最新：** ## 2026-06-20 — 寶寶（Opus 4.8）：修登入鏈路（假後門 / 401 / CORS / demo 帳號）
+**Work Log 最新：** ## 2026-06-26 — 寶寶（Opus 4.8）：新增 6 個專案 slash command（.claude/commands/）
 
