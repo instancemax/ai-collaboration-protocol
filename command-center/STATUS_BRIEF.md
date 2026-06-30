@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-06-29 22:44 UTC
+> 最後更新：2026-06-30 23:01 UTC
 
 ---
 
@@ -14,14 +14,12 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** e1adc2c chore: update status brief [skip ci] — 2026-06-28
+**Latest commit:** eba0d14 chore: update status brief [skip ci] — 2026-06-29
 
 ## instancemax/bank
 
 **Open PRs:**
-- #206 fix(transfer): 收款方入帳 — 修正「錢蒸發」致命 bug (@instancemax)
-- #205 refactor(kong): 路由改用 service 名（staging 地基） (@instancemax)
-- #197 feat: 新增 /ian-help 指令索引 (@instancemax)
+- #208 feat(staging): 精簡核心 staging stack + 操作手冊 (@instancemax)
 - #196 全站訪問閘門（site gate）+ 安全強化 (@instancemax)
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
@@ -37,7 +35,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** 04db375 fix(card): 修信用卡 415 — apiFetch 統一補 Content-Type (#195) — 2026-06-28
+**Latest commit:** 4f47628 feat(login): 加上 Demo 聲明橫幅（降低 Google 釣魚誤判）(#207) — 2026-06-30
 
-**Work Log 最新：** ## 2026-06-28 — 寶寶（Opus 4.8）：修信用卡 415 bug（apiFetch Content-Type）
+**Work Log 最新：** ## 2026-06-28 — 寶寶（Opus 4.8）：修轉帳致命 bug — 收款方完全沒入帳（錢蒸發）
 
