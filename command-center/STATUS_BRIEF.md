@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-06-30 23:01 UTC
+> 最後更新：2026-07-01 22:59 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** eba0d14 chore: update status brief [skip ci] — 2026-06-29
+**Latest commit:** ff29d91 chore: update status brief [skip ci] — 2026-06-30
 
 ## instancemax/bank
 
@@ -24,6 +24,7 @@
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
 **Open Issues:**
+- #209 🔴 [security] 網站強制 HTTPS — 解除 Google Safe Browsing 詐騙標記
 - #204 🏅 [automation] Telegram Bot — 系統通知 / CI / 每日報表推播
 - #203 🏅 [infra] Wireguard VPN — 私有網路 + staging IP 白名單
 - #202 🥉 [selfhost] 自架實用服務（Vaultwarden / Memos / AdGuard Home）
