@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-07-02 22:54 UTC
+> 最後更新：2026-07-03 22:51 UTC
 
 ---
 
@@ -14,13 +14,13 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 11295e9 chore: update status brief [skip ci] — 2026-07-01
+**Latest commit:** 434bf6c chore: update status brief [skip ci] — 2026-07-02
 
 ## instancemax/bank
 
 **Open PRs:**
+- #213 feat(site-gate): 混合式閘門 (Option C) — 首頁開放、進銀行才需登入（取代 #196） (@instancemax)
 - #210 feat(landing): 重構為兩區 — 作品(模擬銀行) / 作者(關於我+App) (@instancemax)
-- #196 全站訪問閘門（site gate）+ 安全強化 (@instancemax)
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
 **Open Issues:**
