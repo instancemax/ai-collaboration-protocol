@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-07-03 22:51 UTC
+> 最後更新：2026-07-04 22:44 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 434bf6c chore: update status brief [skip ci] — 2026-07-02
+**Latest commit:** 3095810 chore: update status brief [skip ci] — 2026-07-03
 
 ## instancemax/bank
 
@@ -24,6 +24,10 @@
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
 **Open Issues:**
+- #218 [enhancement] 充實遊樂場（playground）內容
+- #217 [enhancement] landing 標示網銀 / 證券為「模擬用途」
+- #216 [infra] SEO 基礎建設 — 讓 Google 能收錄首頁
+- #215 [feature] 網站橫向擴展 — 讓內容更豐富
 - #212 [perf] 轉帳收款方熱點行 (hot row) — 高併發下的競爭
 - #211 [hardening] 註冊流程不洩漏「帳號已存在」
 - #209 🔴 [security] 網站強制 HTTPS — 解除 Google Safe Browsing 詐騙標記
@@ -38,7 +42,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** 2398fd7 feat(staging): 精簡核心 staging stack + 操作手冊 (#208) — 2026-07-02
+**Latest commit:** d1e9750 chore(deploy): 部署病根加固 + 轉帳入帳回歸測試 (#214) — 2026-07-04
 
-**Work Log 最新：** ## 2026-06-28 — 寶寶（Opus 4.8）：修轉帳致命 bug — 收款方完全沒入帳（錢蒸發）
+**Work Log 最新：** ## 2026-07-03 — 寶寶（Opus 4.8）：撲火收尾 — 部署病根加固 + 轉帳回歸測試
 
