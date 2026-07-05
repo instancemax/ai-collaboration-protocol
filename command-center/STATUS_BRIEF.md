@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-07-04 22:44 UTC
+> 最後更新：2026-07-05 22:46 UTC
 
 ---
 
@@ -14,12 +14,11 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 3095810 chore: update status brief [skip ci] — 2026-07-03
+**Latest commit:** 62fd93c chore: update status brief [skip ci] — 2026-07-04
 
 ## instancemax/bank
 
 **Open PRs:**
-- #213 feat(site-gate): 混合式閘門 (Option C) — 首頁開放、進銀行才需登入（取代 #196） (@instancemax)
 - #210 feat(landing): 重構為兩區 — 作品(模擬銀行) / 作者(關於我+App) (@instancemax)
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
@@ -42,7 +41,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** d1e9750 chore(deploy): 部署病根加固 + 轉帳入帳回歸測試 (#214) — 2026-07-04
+**Latest commit:** e03b62c fix(site-gate): 修 /bank 500 — auth_request Content-Length 改 0 (#219) — 2026-07-05
 
-**Work Log 最新：** ## 2026-07-03 — 寶寶（Opus 4.8）：撲火收尾 — 部署病根加固 + 轉帳回歸測試
+**Work Log 最新：** ## 2026-07-06 — 寶寶（Opus 4.8）：修 site-gate `/bank` 500（auth_request Content-Length）
 
