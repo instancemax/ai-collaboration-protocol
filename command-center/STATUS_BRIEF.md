@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-07-06 22:54 UTC
+> 最後更新：2026-07-07 22:49 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 7a8f7c3 chore: update status brief [skip ci] — 2026-07-05
+**Latest commit:** 5164e5d chore: update status brief [skip ci] — 2026-07-06
 
 ## instancemax/bank
 
@@ -23,6 +23,9 @@
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
 **Open Issues:**
+- #223 🔴 [infra] site-gate 部署後 cloudflared 連不到 gate-proxy → 502（隧道連線）
+- #221 [selfhost] 自架郵件伺服器（⚠️ 高難度 / 高風險，先評估）
+- #220 [selfhost] n8n — 自架自動化工作流引擎
 - #218 [enhancement] 充實遊樂場（playground）內容
 - #217 [enhancement] landing 標示網銀 / 證券為「模擬用途」
 - #216 [infra] SEO 基礎建設 — 讓 Google 能收錄首頁
@@ -41,7 +44,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** e03b62c fix(site-gate): 修 /bank 500 — auth_request Content-Length 改 0 (#219) — 2026-07-05
+**Latest commit:** 4ec02b0 fix(site-gate): 修 /bank 500 真兇 — auth_request 補 Host 標頭 (#222) — 2026-07-07
 
 **Work Log 最新：** ## 2026-07-06 — 寶寶（Opus 4.8）：修 site-gate `/bank` 500（auth_request Content-Length）
 
