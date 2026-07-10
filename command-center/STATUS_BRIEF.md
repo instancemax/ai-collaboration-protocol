@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-07-09 23:00 UTC
+> 最後更新：2026-07-10 22:46 UTC
 
 ---
 
@@ -14,15 +14,17 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** fda669e chore: update status brief [skip ci] — 2026-07-08
+**Latest commit:** b35255b chore: update status brief [skip ci] — 2026-07-09
 
 ## instancemax/bank
 
 **Open PRs:**
+- #224 feat(landing): 互動式系統架構導覽頁 (MVP) (@instancemax)
 - #210 feat(landing): 重構為兩區 — 作品(模擬銀行) / 作者(關於我+App) (@instancemax)
 - #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
 
 **Open Issues:**
+- #225 [enhancement] 各功能頁旁嵌「該功能的完整旅程」說明（延伸自架構導覽）
 - #223 🔴 [infra] site-gate 部署後 cloudflared 連不到 gate-proxy → 502（隧道連線）
 - #221 [selfhost] 自架郵件伺服器（⚠️ 高難度 / 高風險，先評估）
 - #220 [selfhost] n8n — 自架自動化工作流引擎
@@ -44,7 +46,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** 4ec02b0 fix(site-gate): 修 /bank 500 真兇 — auth_request 補 Host 標頭 (#222) — 2026-07-07
+**Latest commit:** 8edd617 feat(landing): 版本蓋章 — footer 顯示最後發佈時間 + commit (#226) — 2026-07-10
 
-**Work Log 最新：** ## 2026-07-06 — 寶寶（Opus 4.8）：修 site-gate `/bank` 500（auth_request Content-Length）
+**Work Log 最新：** ## 2026-07-08 — 寶寶（Fable 5）：landing 版本蓋章（發佈時間 + commit）
 
