@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-07-10 22:46 UTC
+> 最後更新：2026-07-11 22:34 UTC
 
 ---
 
@@ -14,14 +14,12 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** b35255b chore: update status brief [skip ci] — 2026-07-09
+**Latest commit:** b4cb530 chore: update status brief [skip ci] — 2026-07-10
 
 ## instancemax/bank
 
 **Open PRs:**
-- #224 feat(landing): 互動式系統架構導覽頁 (MVP) (@instancemax)
-- #210 feat(landing): 重構為兩區 — 作品(模擬銀行) / 作者(關於我+App) (@instancemax)
-- #58 feat(mobile): configure android build and ignore actions-runner (@instancemax)
+- 無
 
 **Open Issues:**
 - #225 [enhancement] 各功能頁旁嵌「該功能的完整旅程」說明（延伸自架構導覽）
@@ -46,7 +44,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** 8edd617 feat(landing): 版本蓋章 — footer 顯示最後發佈時間 + commit (#226) — 2026-07-10
+**Latest commit:** f495b10 feat(landing): 互動式系統架構導覽頁 (MVP) (#224) — 2026-07-11
 
-**Work Log 最新：** ## 2026-07-08 — 寶寶（Fable 5）：landing 版本蓋章（發佈時間 + commit）
+**Work Log 最新：** ## 2026-07-08 — 寶寶（Fable 5）：互動式系統架構導覽頁 architecture.html（MVP）
 
