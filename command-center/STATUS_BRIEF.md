@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-07-18 22:35 UTC
+> 最後更新：2026-07-19 22:38 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** ef61b2b chore: update status brief [skip ci] — 2026-07-17
+**Latest commit:** 13ecff8 chore: update status brief [skip ci] — 2026-07-18
 
 ## instancemax/bank
 
@@ -22,6 +22,10 @@
 - 無
 
 **Open Issues:**
+- #236 實驗：Telegram Bot 作為 IanBank 受控入口
+- #235 實驗：Demo 使用者清單與一鍵登入
+- #234 實驗：受控 AI Agent 登入 IanBank 並執行 sandbox 操作
+- #233 實驗性產品線：AI Agent、Demo 快捷登入與 Telegram Bot
 - #225 [enhancement] 各功能頁旁嵌「該功能的完整旅程」說明（延伸自架構導覽）
 - #223 🔴 [infra] site-gate 部署後 cloudflared 連不到 gate-proxy → 502（隧道連線）
 - #221 [selfhost] 自架郵件伺服器（⚠️ 高難度 / 高風險，先評估）
@@ -42,7 +46,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** 60bda08 feat: group sidebar navigation — 2026-07-18
+**Latest commit:** 7905c0d feat: 交接 skill — /ian-handoff-write 與 /ian-handoff-review (#232) — 2026-07-19
 
 **Work Log 最新：** ## 2026-07-14 — Codex：Atlas 上線至 IanBank VPS `/atlas/`
 
