@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-07-25 22:41 UTC
+> 最後更新：2026-07-26 22:45 UTC
 
 ---
 
@@ -14,12 +14,12 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 03af49d chore: update status brief [skip ci] — 2026-07-24
+**Latest commit:** 6ac33cd chore: update status brief [skip ci] — 2026-07-25
 
 ## instancemax/bank
 
 **Open PRs:**
-- 無
+- #237 fix: define public search indexing contract (@instancemax)
 
 **Open Issues:**
 - #236 實驗：Telegram Bot 作為 IanBank 受控入口
