@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-07-26 22:45 UTC
+> 最後更新：2026-07-27 22:47 UTC
 
 ---
 
@@ -14,12 +14,12 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 6ac33cd chore: update status brief [skip ci] — 2026-07-25
+**Latest commit:** 60f92fb chore: update status brief [skip ci] — 2026-07-26
 
 ## instancemax/bank
 
 **Open PRs:**
-- #237 fix: define public search indexing contract (@instancemax)
+- 無
 
 **Open Issues:**
 - #236 實驗：Telegram Bot 作為 IanBank 受控入口
@@ -46,7 +46,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** 7905c0d feat: 交接 skill — /ian-handoff-write 與 /ian-handoff-review (#232) — 2026-07-19
+**Latest commit:** 4a3d808 Merge pull request #237 from instancemax/codex/mac/seo-indexing — 2026-07-27
 
 **Work Log 最新：** ## 2026-07-14 — Codex：Atlas 上線至 IanBank VPS `/atlas/`
 
