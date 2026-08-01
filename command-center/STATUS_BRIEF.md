@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-07-31 22:47 UTC
+> 最後更新：2026-08-01 22:41 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 7f5537e chore: update status brief [skip ci] — 2026-07-30
+**Latest commit:** 48ba466 chore: update status brief [skip ci] — 2026-07-31
 
 ## instancemax/bank
 
@@ -46,7 +46,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** a4a310d Merge pull request #238 from instancemax/codex/mac/isolate-production-tunnel — 2026-07-28
+**Latest commit:** 1acc00a fix: make City container reproducible (#241) — 2026-08-01
 
-**Work Log 最新：** ## 2026-07-14 — Codex：Atlas 上線至 IanBank VPS `/atlas/`
+**Work Log 最新：** ## 2026-08-02 — Codex：EX-03 IanBank City 互動 3D 銀行城
 
