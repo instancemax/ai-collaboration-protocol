@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-08-15 22:08 UTC
+> 最後更新：2026-08-16 22:07 UTC
 
 ---
 
@@ -14,12 +14,12 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 8927696 chore: update status brief [skip ci] — 2026-08-14
+**Latest commit:** fab44a6 chore: update status brief [skip ci] — 2026-08-15
 
 ## instancemax/bank
 
 **Open PRs:**
-- #242 test: cover analytics service behavior (@instancemax)
+- 無
 
 **Open Issues:**
 - #236 實驗：Telegram Bot 作為 IanBank 受控入口
@@ -46,7 +46,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** 1acc00a fix: make City container reproducible (#241) — 2026-08-01
+**Latest commit:** 16e0eef test: cover spending insights behavior (#245) — 2026-08-16
 
-**Work Log 最新：** ## 2026-08-02 — Codex：EX-03 IanBank City 互動 3D 銀行城
+**Work Log 最新：** ## 2026-08-16 — Codex：發布 bounded Loop Engineering Runner
 
