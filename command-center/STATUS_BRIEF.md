@@ -2,7 +2,7 @@
 
 > 這份檔案由 `command-center/scripts/collect-status.sh` 自動產生，**請勿手動編輯**。
 > 要改格式請改腳本；要改掃描範圍請改 `command-center/repos.txt`。
-> 最後更新：2026-08-17 22:11 UTC
+> 最後更新：2026-08-18 22:09 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 **Open Issues:**
 - 無
 
-**Latest commit:** 54e3c02 chore: update status brief [skip ci] — 2026-08-16
+**Latest commit:** e29a53a chore: update status brief [skip ci] — 2026-08-17
 
 ## instancemax/bank
 
@@ -46,7 +46,7 @@
 - #54 feat(mobile): Flutter app 發布 — Google Play Internal Testing + Apple TestFlight
 - #51 bug: ianjiayuanboy.dev/securities 跳轉 404
 
-**Latest commit:** 56ac8ca test: cover card service behavior (#246) — 2026-08-17
+**Latest commit:** 81b8ea0 test: characterize inbound settlement (#248) — 2026-08-18
 
 **Work Log 最新：** ## 2026-08-16 — Codex：發布 bounded Loop Engineering Runner
 
